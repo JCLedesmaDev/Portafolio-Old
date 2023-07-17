@@ -1,0 +1,346 @@
+// Portafolio en si:
+main .portafolio .contenedor{
+
+  h2{
+    margin-top: 2rem;
+  }
+
+  .portafolio-card{
+    position: relative;
+    width: 100%;
+    height: 23rem;
+    margin: 0.75rem auto;
+    display: block;
+    overflow: hidden;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-position: center;
+    }
+
+    .portafolio-card-info{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      background-color: $color-principal-opacidad;
+      color: $color-blanco;
+
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(100%);
+      transition: all .5s ease-in-out;
+
+      .contenedor-info{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        border: 2px solid #fff;
+        border-radius: .25rem;
+
+        display: flex;
+        flex-direction: column;
+
+        .info-enlace{
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+          span.btn{
+            //Modificamos un poco la clase "btn" ya existente
+            background-color: rgb(5, 172, 243);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &:hover .portafolio-card-info{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0%);
+    }
+  }
+}
+
+// Efectos e inclusion del modal del portafolio:
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  background: $color-negro-opacidad;
+  backdrop-filter: blur(.75rem); //efecto borroso de fondo
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+  transition: opacity .7s ease-in-out, pointer-events .7s ease-in-out, transform .7s ease-in-out;
+}
+.modal[id|="trabajo"]:target{ /*De esta manera, cuando le hagamos click a un target/elemento que dentro de sus atributos tenga un id con la palabra "trabajo, se va a abrir automaticamente el modal*/
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+// Estilo del modal 
+.modal .modal-content{
+  position: relative;
+
+  .modal-cerrar{
+    position: absolute;
+    top: .25rem;
+    right: .25rem;
+
+    i{
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: $color-principal;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.5rem;
+      color: $color-blanco;
+    }
+  }
+
+  .portafolio-modal{
+    width: 100%;
+    max-width: 400px;
+    height: 85vh;
+    
+    padding: 2rem 1rem 0.5rem 1rem;
+    margin-bottom: 3rem;
+    background-color: $color-blanco;
+    
+    display: flex;
+    flex-direction: column;
+    
+    .carrousel{
+
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      max-height: 11.5rem;
+      overflow: hidden;
+      position: relative;
+
+      .slides{
+
+        /* Por cada foto que tengas, le debes agregar un 100% al width. COmo tenemos 5 fotos en el slide, ponemos 500%*/
+        display: flex;
+        width: 500%; //400
+        height: 30vh;
+      
+        transform: translateX(0);
+        transition: transform .5s ease-in-out;
+
+        //Animacion llamada en JS (modal.js) utilizando la animacion existente mas abajo
+    
+        img{
+          /* Por cada foto (igual que arriba), lo debes dividir al 100%, es decir como tenemos 5 fotos en el slide, ponemos 20%*/
+          width: 20%; //25
+          height: inherit;
+          object-fit: fill; //contain
+          object-position: center;
+          box-sizing: border-box;
+          padding: 0 .75rem;
+        }
+      }
+
+      .carrousel-btns{
+        position: absolute;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        padding: 0 .5rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        button{
+          font-size: 1.25rem;
+          border: 1px solid $color-secundario;
+          border-radius: .25rem;
+          padding: 0 .25rem;
+          
+          outline: none;
+          background-color: $color-secundario;
+          color: $color-blanco;
+          font-size: 1.25rem;
+          cursor: pointer;
+
+          &:hover{
+            background-color: transparent;
+            color: $color-secundario;
+          }
+        }
+      }
+    }
+
+    .portafolio-info{
+
+      width: 100%;
+      height: 90%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+
+      h3{
+        border-bottom: 3px solid $color-principal;
+        margin: 1rem 0;
+        padding-bottom: .5rem;
+        text-align: center;
+        color: $color-texto;
+      }
+
+      p{
+        margin-top: 0;
+      }
+
+      .portafolio-details{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-auto-rows: 1.5rem;
+
+        align-content: end;
+        width: 100%;
+        height: 100%;
+
+        small{
+          b{
+            color: $color-principal;
+          }
+
+          a{
+            font-weight: bold;
+            font-size: .85rem;
+            text-decoration: underline;
+          }
+        }
+      }
+    } 
+  }
+}
+
+/* Media queries para tablet */
+@media screen and (min-width:768px){
+
+  // Portafolio en si:
+  main .portafolio .contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-around;
+    align-items: center;
+
+    .section-title{
+      grid-column: span 2;
+    }
+  }
+
+  //Estilo del modal
+  .modal .modal-content .portafolio-modal{
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    padding: 1rem 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    img{
+      width: 50%;
+      height: 100%;
+    }
+
+    .portafolio-info{
+      margin: 1rem;
+      align-self: center;
+
+      h3{
+        margin: 0;
+      }
+      p{
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  //Estilo del carrousel
+  .modal .modal-content .portafolio-modal .carrousel{
+    max-height: none;
+
+    .slides{
+      height: 100%;
+    }
+  }
+}
+/* Media queries para escritorio */
+@media screen and (min-width: 1024px){
+
+  // Portafolio en si:
+  main .portafolio .contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-around;
+    align-items: center;
+
+    .section-title{
+      grid-column: span 3;
+      margin-top: $header-nav-height;
+    }
+  }
+}
+
+
+@keyframes carousel-slide{
+
+  /* Comparte el mismo porcentaje que el comentario de abajo de DIVISION*/
+  0%{
+    transform: translateX(0%);
+  }
+  
+  20%{
+    transform: translateX(-20%);
+  }
+  
+  40%{
+    transform: translateX(-40%);
+
+  }
+  
+  60%{
+    transform: translateX(-60%);
+  }
+
+  80%{
+    transform: translateX(-80%);
+  }
+
+  100%{
+    transform: translateX(0%);
+  }
+}

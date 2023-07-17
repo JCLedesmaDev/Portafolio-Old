@@ -1,0 +1,857 @@
+.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja CSS -->
+  <!-- Cada vez que se suba a github, cambiar el 1.0.0 por el n° sig -->
+  <link rel="stylesheet" href="style/main.css?1.4">
+
+  <!-- META DATOS -->
+  <title>Portafolio Web</title>
+  <link rel="shortcut icon" href="static/icono-portafolio.png" type="image/x-icon">
+
+  <!-- 1) Descripcion de la pagina -->
+  <meta name="description"
+    content="Hola bienvenid@ a mi Portafolio Profesional, soy Juan Cruz Ledesma, Desarrollador Web">
+
+  <!-- 2) Indica a los buscadores la URL oficial que tienen que posicionar en el SEO -->
+  <link rel="canonical" href="https://jcledesmadev.github.io/Portafolio-CV/">
+
+  <!-- 3) Icono de la pagina -->
+  <link rel="favicon" href="https://jcledesmadev.github.io/Portafolio-CV/static/icono-portafolio.png">
+
+  <!-- 4) Metas etiquetas para compartir en Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Portafolio Web">
+  <meta name="twitter:image" content="https://jcledesmadev.github.io/Portafolio-CV/static/hero-image-home.jpg">
+  <meta name="twitter:url" content="https://jcledesmadev.github.io/Portafolio-CV/">
+  <meta name="twitter:description"
+    content="Hola bienvenid@ a mi Portafolio Profesional, soy Juan Cruz Ledesma, Desarrollador Web">
+
+  <!-- 5) Metas etiquetas para compartir en Facebook/Linkedin -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio Web">
+  <meta property="og:image" content="https://jcledesmadev.github.io/Portafolio-CV/static/hero-image-home.jpg">
+  <meta property="og:url" content="https://jcledesmadev.github.io/Portafolio-CV/">
+  <meta property="og:description"
+    content="Hola bienvenid@ a mi Portafolio Profesional, soy Juan Cruz Ledesma, Desarrollador Web">
+
+  <!-- PD: Para la aparicion de la imagen a la hora de compartilo en facebook, twitter, linkedin o wp, estaran los metadatos "name/property=' :image' " -->
+
+  <!-- 6) Metas etiquetas para hacer Progressive Web App -->
+  <!-- Especificamos el color de la barra de navegacion para celulares -->
+  <meta name="theme-color" content="#dc143c">
+  <!-- Para indicar a los navegadores mobiles que el sitio esta optimizado -->
+  <meta name="MobileOptimized" content="width">
+  <!-- Para indicar a los navegadores mobiles que el sitio esta optimizado -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- Meta etiquetas para el Ipad y Iphone -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Icono que se instala en la pantalla de los distpositivos -->
+  <link rel="apple-touch-icon" href="https://jcledesmadev.github.io/Portafolio-CV/static/icono-portafolio.png">
+  <link rel="apple-touch-startup-image" href="https://jcledesmadev.github.io/Portafolio-CV/static/icono-portafolio.png">
+
+  <!-- 3/6 Min 3:45 VER PROGRESSIVE WEB APP -->
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav id="nav" class="navModelo1">
+
+      <div class="contenedor">
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <span>Mi </span>Portafolio</a>
+        </div>
+
+        <!-- Menu Hamburguesa -->
+        <button class="menu-btn">
+          <!-- Boton para abrir menu -->
+          <i class="fas fa-bars"></i>
+          <!-- Boton para cerrar menu -->
+          <i class="fas fa-times none"></i>
+        </button>
+
+        <div class="menu">
+          <a href="#inicio" data-scroll-spy>Inicio</a>
+          <a href="#acerca-de" data-scroll-spy>Sobre mi</a>
+          <a href="#portafolio" data-scroll-spy>Portafolio</a>
+          <a href="#contacto" data-scroll-spy>Contacto</a>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="inicio" class="home" data-scroll-spy>
+
+      <!-- Este article, contendra la imagen de fondo -->
+      <article class="hero-image">
+
+        <!-- Este aside, le dara la opacidad a la imagen de fondo -->
+        <aside class="hero-image-opacity">
+
+
+          <div class="hero-image-content">
+
+            <h3 class="hero-image-title">
+
+              Hola! Mi nombre es <br>
+              <span class="span-1">Juan Cruz Ledesma</span> <br>
+              Y soy <span class="span-2">Desarrollador <i>Web</i></span>
+            </h3>
+
+            <a href="#acerca-de" class="btn">Conoceme!</a>
+
+          </div>
+
+        </aside>
+
+      </article>
+
+    </section>
+
+    <section id="acerca-de" class="about contenedor section-space full-lg-screen" data-scroll-spy>
+
+      <h2 class="titulo"> Sobre mi:</h2>
+
+      <article class="article-space text-lg-center text-center">
+
+        <aside>
+          <h1>Juan Cruz Ledesma</h1>
+          <h4 class="text-color-principal">Desarrollador <i>Web</i> Jr.</h4>
+        </aside>
+
+        <p>
+          Tengo 20 años y me considero una persona que sabe escuchar y entender rápidamente las necesidades de los
+          clientes. <br>
+          Me gusta mucho el diseño web, por lo que me preocupo en que se vean con una estética y un arte equilibrado
+          acorde a lo que el cliente necesita.
+        </p>
+
+        <p>
+          Mi formación en el diseño de planos arquitectónicos me ayudó a entender la necesidad de tener una buena
+          arquitectura, además de un buen diseño, lo que hace que este continuamente formándome en el Desarrollo
+          <i><b>Back-End</b></i>, para lograr un código robusto, elegante y flexible. <br>
+          Me <b>entusiasma</b> aprender cosas nuevas, es por eso que estoy siempre en continua formación.
+        </p>
+
+        <p>
+          Actualmente me encuentro cursando la <b>Tecnicatura Superior en Desarrollo de Software</b> en el
+          Instituto Técnico Superior Córdoba (I.T.S. Córdoba), con el objetivo de profundizar más en el mundo del
+          <b>Software</b>.
+        </p>
+
+        <p>
+          Si bien mis conocimientos me permiten definirme como Desarrollador <i><b>Front-End</b></i>, tengo algunos
+          conocimientos en el entorno de <b>NodeJS</b> y actualmente estoy enfocando mis esfuerzos en comprender
+          cabalmente estos lenguajes para definirme como <b>Full-Stack</b>
+        </p>
+
+        <div>
+          <a href="./static/C.V - Desarrollador Web - Juan Cruz Ledesma.pdf" class="btn" target="_blank" rel="noopener">
+            DESCARGA MI CV
+          </a>
+        </div>
+
+      </article>
+
+      <article class="article-space text-center">
+        <img src="static/fotoCV.jpg" class="scale-img" alt="Juan Cruz Ledesma">
+      </article>
+
+      <article class="text-center">
+        <h2 class="padding-top sub-section-title">Mis Habilidades:</h2>
+
+        <p>
+          Considero que soy <b>detallista</b> (hablando del diseño), me importan mucho los detalles aunque estos sean
+          mínimos y
+          trato de que todo esté en armonía en cuanto a los colores y formas de los objetos.
+        </p>
+        <p>
+          A su vez, también me considero <b>autocrítico</b> ya que siempre pienso que podría mejorar cierto detalle
+          o aspecto. <br>
+          Por último, siempre <b>acepto</b> y tomo muy en cuenta cualquier crítica, sugerencia y/o tip sobre cómo hacer
+          de cierta manera algún trabajo.
+        </p>
+
+        <div class="contenedor-skills">
+
+          <!-- Tecnologias Front-End -->
+          <div class="skills">
+
+            <h3 class="sub-section-title">Tecnologias Front-End:</h3>
+
+            <!-- html5 -->
+            <div class="tecnologias">
+              <div class="title-tecnologias">
+                <p>HTML5</p>
+              </div>
+              <img src="./static/skills/html.svg" alt="icon html5">
+            </div>
+
+            <!-- css3 -->
+            <div class="tecnologias">
+              <div class="title-tecnologias">
+                <p>CSS3</p>
+              </div>
+              <img src="./static/skills/css.svg" alt="icon css3">
+            </div>
+
+            <!-- hbs -->
+            <div class="tecnologias" style="background-color: orange;">
+              <div class="title-tecnologias">
+                <p>Handlebars</p>
+              </div>
+              <img src="./static/skills/handlebarsjs.svg" alt="icon handlebars">
+            </div>
+
+            <!-- JS -->
+            <div class="tecnologias">
+              <div class="title-tecnologias">
+                <p>JavaScript</p>
+              </div>
+              <img src="./static/skills/js.svg" alt="icon JS EcmaScript6">
+            </div>
+
+            <!-- React -->
+            <div class="tecnologias">
+              <div class="title-tecnologias">
+                <p>ReactJS</p>
+              </div>
+              <img src="./static/skills/react.svg" alt="icon react">
+            </div>
+
+            <!-- Ionic -->
+            <div class="tecnologias ionic" style="background-color: #bbb;">
+              <div class="title-tecnologias">
+                <p>Ionic 5</p>
+              </div>
+              <img src="./static/skills/ionic.svg" alt="icon ionic">
+            </div>
+
+          </div>
+
+
+          <!-- Tecnologias Back-End -->
+          <div class="skills">
+
+            <h3 class="sub-section-title">Tecnologias Back-End:</h3>
+
+            <!-- NodeJS -->
+            <div class="tecnologias" style="background-color: #58aa5090;">
+              <div class="title-tecnologias">
+                <p>NodeJS</p>
+              </div>
+              <img src="./static/skills/nodejs.svg" alt="icon nodejs">
+            </div>
+
+            <!-- Express -->
+            <div class="tecnologias" style="background-color: #ddd;">
+              <div class="title-tecnologias">
+                <p>ExpressJS</p>
+              </div>
+
+              <p>
+                Express<span> JS</span>
+              </p>
+            </div>
+
+            <!-- mongodb -->
+            <div class="tecnologias" style="background-color: #a5a284;">
+              <div class="title-tecnologias">
+                <p>MongoDB</p>
+              </div>
+
+              <img src="./static/skills/mongodb.svg" alt="icon mongodb">
+            </div>
+
+          </div>
+
+          <!-- Actualmente aprendiendo -->
+          <div class="skills">
+
+            <h3 class="sub-section-title">Proximamente:</h3>
+
+            <!-- MySQL -->
+            <div class="tecnologias" title="MySQL" style="background: #eee;">
+
+              <div class="title-tecnologias">
+                <p>MySQL</p>
+              </div>
+
+              <img src="./static/skills/mysql.svg" alt="icon mysql" style="transform: scale(.90);">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <section id="portafolio" class="portafolio section-space" data-scroll-spy>
+
+      <!-- Trabajos realizados -->
+      <div class="contenedor">
+
+        <h2 class="section-title">Mis trabajos</h2>
+
+        <a href="#trabajo-1" class="portafolio-card">
+
+          <img src="static/crud-libros/crud-libros-1.png" alt="trabajo practica 1">
+          <aside class="portafolio-card-info">
+            <div class="contenedor-info">
+
+              <h3>CRUD de Libros</h3>
+              <p>
+                Proyecto que lleva el registro de una bibloteca personal para organizar tu propia bibloteca.
+              </p>
+
+              <div class="info-enlace">
+                <span class="btn"> Haz click para saber mas...</span>
+              </div>
+
+            </div>
+
+          </aside>
+        </a>
+
+        <a href="#trabajo-2" class="portafolio-card">
+
+          <img src="static/crud-notas/crud-notas-con-login-1.png" alt="trabajo practica 2">
+
+          <aside class="portafolio-card-info">
+            <div class="contenedor-info">
+              <h3>CRUD de notas con Login & Registro</h3>
+              <p>
+                Proyecto que lleva el registro de notas personales para utilizarlas de recordatorio.
+              </p>
+
+              <div class="info-enlace">
+                <span class="btn"> Haz click para saber mas...</span>
+              </div>
+            </div>
+
+          </aside>
+        </a>
+
+        <a href="#trabajo-3" class="portafolio-card">
+
+          <img src="static/mi-portafolio/mi-portafolio-1.png" alt="trabajo practica 3">
+
+          <aside class="portafolio-card-info">
+            <div class="contenedor-info">
+              <h3>Mi portafolio</h3>
+              <p>
+                Proyecto para la presentacion de mis conocimientos en el desarrollo web.
+              </p>
+
+              <div class="info-enlace">
+                <span class="btn"> Haz click para saber mas...</span>
+              </div>
+            </div>
+
+          </aside>
+        </a>
+
+        <a href="#trabajo-4" class="portafolio-card">
+
+          <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="trabajo practica 4">
+
+          <aside class="portafolio-card-info">
+            <div class="contenedor-info">
+              <h3>CRUD de Proyectos con Stack M.E.R.N</h3>
+              <p>
+                Proyecto que nos permite anotar las tareas pendientes a desarrollar, de cada proyecto en particular en
+                el que estemos trabajando.
+              </p>
+
+              <div class="info-enlace">
+                <span class="btn"> Haz click para saber mas...</span>
+              </div>
+            </div>
+
+          </aside>
+        </a>
+
+      </div>
+
+      <!-- Ventanas modal del portafolio (en el css, ta todo) -->
+      <article class="modal" id="trabajo-1">
+
+        <div class="modal-content">
+
+          <a href="#close" class="modal-cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+
+          <article class="portafolio-modal">
+
+            <div class="carrousel" id="carrousel-1">
+
+              <div class="slides">
+
+                <img src="static/crud-libros/crud-libros-1.png" alt="Trabajo 1 - Foto 1">
+
+                <img src="static/crud-libros/crud-libros-2.png" alt="Trabajo 1 - Foto 2">
+
+                <img src="static/crud-libros/crud-libros-3.png" alt="Trabajo 1 - Foto 3">
+
+                <img src="static/crud-libros/crud-libros-4.png" alt="Trabajo 1 - Foto 4">
+
+                <img src="static/crud-libros/crud-libros-5.png" alt="Trabajo 1 - Foto 5">
+
+              </div>
+
+              <div class="carrousel-btns">
+                <button class="prev" id="prev">
+                  &laquo;
+                </button>
+                <button class="next" id="next">
+                  &raquo;
+                </button>
+              </div>
+
+            </div>
+
+            <div class="portafolio-info">
+              <h3>CRUD de Libros</h3>
+              <p>Esta aplicacion fue creada utilizando: <br>
+                <b>- En el <i>Back-End</i></b> : NodeJS, Express, MongoDB. <br>
+                <b>- En el <i>Front-End</i></b> : HTML5, CSS3 / Bootstrap 4 y Vanilla JavaScript.
+              </p>
+
+              <aside class="portafolio-details">
+                <small><b>CLIENTE:</b></small>
+                <small> --- </small>
+
+                <small><b>FECHA:</b></small>
+                <small>10/11/2020</small>
+
+                <small><b>TIPO:</b></small> <!-- X EJ: Sitio web, marketing, diseño web, etc -->
+                <small> Sitio <i>Web Responsive</i></small>
+
+                <small><b>ENLACE:</b></small>
+                <small>
+                  <a href="https://github.com/JCLedesmaDev/CRUD-de-Libros" target="_blank" rel="noopener">
+                    Haz click aqui
+                  </a>
+                </small>
+              </aside>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </article>
+
+      <article class="modal" id="trabajo-2">
+        <div class="modal-content">
+
+          <a href="#close" class="modal-cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+
+          <article class="portafolio-modal">
+
+            <div class="carrousel" id="carrousel-2">
+
+              <div class="slides">
+
+                <img src="static/crud-notas/crud-notas-con-login-1.png" alt="Trabajo 2 - Foto 1">
+
+                <img src="static/crud-notas/crud-notas-con-login-2.png" alt="Trabajo 2 - Foto 2">
+
+                <img src="static/crud-notas/crud-notas-con-login-3.png" alt="Trabajo 2 - Foto 3">
+
+                <img src="static/crud-notas/crud-notas-con-login-4.png" alt="Trabajo 2 - Foto 4">
+
+                <img src="static/crud-notas/crud-notas-con-login-5.png" alt="Trabajo 2 - Foto 5">
+
+              </div>
+
+              <div class="carrousel-btns">
+                <button class="prev" id="prev">
+                  &laquo;
+                </button>
+                <button class="next" id="next">
+                  &raquo;
+                </button>
+              </div>
+
+            </div>
+
+            <div class="portafolio-info">
+              <h3>CRUD de Notas con Login</h3>
+              <p>Esta aplicacion fue creada utilizando: <br>
+                <b>- En el <i>Back-End</i> :</b> NodeJS, Express, MongoDB y el modulo "passport.js" para la
+                autenticacion
+                de usuarios. <br>
+                <b>- En el <i>Front-End</i> :</b> Handlebars, Bootstrap 4 y Vanilla JavaScript.
+                <br>
+              </p>
+
+              <aside class="portafolio-details">
+                <small><b>CLIENTE:</b></small>
+                <small> --- </small>
+
+                <small><b>FECHA:</b></small>
+                <small>15/12/2020</small>
+
+                <small><b>TIPO:</b></small>
+                <small> Sitio <i>Web Responsive</i></small>
+
+                <small><b>ENLACE:</b></small>
+                <small><a href="https://github.com/JCLedesmaDev/CRUD-de-Notas-con-Login-y-Registro" target="_blank"
+                    rel="noopener">Haz click aqui</a></small>
+              </aside>
+
+            </div>
+
+          </article>
+
+        </div>
+      </article>
+
+      <article class="modal" id="trabajo-3">
+        <div class="modal-content">
+
+          <a href="#close" class="modal-cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+
+          <article class="portafolio-modal">
+
+            <div class="carrousel" id="carrousel-3">
+
+              <div class="slides">
+
+                <img src="static/mi-portafolio/mi-portafolio-1.png" alt="Trabajo 3 - Foto 1">
+
+                <img src="static/mi-portafolio/mi-portafolio-2.png" alt="Trabajo 3 - Foto 2">
+
+                <img src="static/mi-portafolio/mi-portafolio-3.png" alt="Trabajo 3 - Foto 3">
+
+                <img src="static/mi-portafolio/mi-portafolio-4.png" alt="Trabajo 3 - Foto 4">
+
+                <img src="static/mi-portafolio/mi-portafolio-5.png" alt="Trabajo 3 - Foto 5">
+
+              </div>
+
+              <div class="carrousel-btns">
+                <button class="prev" id="prev">
+                  &laquo;
+                </button>
+                <button class="next" id="next">
+                  &raquo;
+                </button>
+              </div>
+
+            </div>
+
+            <div class="portafolio-info">
+              <h3>Mi portafolio</h3>
+              <p>Esta aplicacion fue creada utilizando: <br>
+                <b>- En el <i>Front-End</i> :</b> HTML5, CSS3 y Vanilla JavaScript (ES 6)
+              </p>
+
+              <aside class="portafolio-details">
+                <small><b>CLIENTE:</b></small>
+                <small> --- </small>
+
+                <small><b>FECHA:</b></small>
+                <small> 11/01/2021</small>
+
+                <small><b>TIPO:</b></small>
+                <small> Diseño <i>Web Responsive</i></small>
+
+                <small><b>ENLACE:</b></small>
+                <small><a href="https://github.com/JCLedesmaDev/Portafolio-CV" target="_blank" rel="noopener">Haz click
+                    aqui</a></small>
+              </aside>
+
+            </div>
+
+          </article>
+
+        </div>
+      </article>
+
+      <article class="modal" id="trabajo-4">
+        <div class="modal-content">
+
+          <a href="#close" class="modal-cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+
+          <article class="portafolio-modal">
+
+            <div class="carrousel" id="carrousel-4">
+
+              <div class="slides">
+
+                <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="Trabajo 4 - Foto 1">
+
+                <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="Trabajo 4 - Foto 2">
+
+                <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="Trabajo 4 - Foto 3">
+
+                <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="Trabajo 4 - Foto 4">
+
+                <img src="static/crud-proyectos-stack-MERN/crud-proyectos-stack-MERN-1.png" alt="Trabajo 4 - Foto 5">
+
+                <!-- Actualizar fotos -->
+              </div>
+
+              <div class="carrousel-btns">
+                <button class="prev" id="prev">
+                  &laquo;
+                </button>
+                <button class="next" id="next">
+                  &raquo;
+                </button>
+              </div>
+
+            </div>
+
+            <div class="portafolio-info">
+              <h3>CRUD de Proyectos con Stack M.E.R.N</h3>
+              <p>Esta aplicacion esta siendo creada utilizando: <br>
+                <b>- En el <i>Back-End</i> :</b> NodeJS, Express, MongoDB. <br>
+                <b>- En el <i>Front-End</i> :</b> ReactJS con sus respectivos Hooks tales como: useState, useEffect,
+                useContext y useReducer;
+                <br>
+              </p>
+
+              <aside class="portafolio-details">
+                <small><b>CLIENTE:</b></small>
+                <small> --- </small>
+
+                <small><b>FECHA:</b></small>
+                <small> 24/04/2021</small>
+
+                <small><b>TIPO:</b></small>
+                <small> Diseño <i>Web Responsive</i></small>
+
+                <small><b>ENLACE:</b></small>
+                <small><a href="https://github.com/JCLedesmaDev/CRUD-de-proyectos-STACK-MERN" target="_blank"
+                    rel="noopener">Haz click
+                    aqui</a></small>
+              </aside>
+            </div>
+
+          </article>
+
+        </div>
+      </article>
+
+    </section>
+
+
+
+
+
+    <section id="contacto" class="contacto section-space" data-scroll-spy>
+
+      <div class="contenedor">
+
+        <h2 class="section-title">¿Interesado?</h2>
+
+        <!-- SOCIALES -->
+        <article class="contact-cards contenedor">
+
+          <!-- UBICACION -->
+          <aside class="contact-card box-shadow">
+
+            <i class="fas fa-map-marker-alt"></i>
+            <h5>UBICACION</h5>
+            <small>
+              <a href="https://www.google.com.ar/maps/dir//Córdoba,+Capital,+Córdoba/@-31.4200053,-64.2237957,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x9432985f478f5b69:0xb0a24f9a5366b092!2m2!1d-64.1887761!2d-31.4200833!3e1"
+                target="_blank" rel="noopener">Cordoba
+                Capital, Cordoba, Argentina.
+              </a>
+            </small>
+
+          </aside>
+
+          <!-- TELEFONO -->
+          <aside class="contact-card box-shadow">
+            <i class="fas fa-phone"></i>
+            <h5>TELEFONO</h5>
+            <small>
+              <a href="tel:3512371503">(+54) 351-2371503</a>
+            </small>
+          </aside>
+
+          <!-- EMAIL -->
+          <aside class="contact-card box-shadow">
+            <i class="fas fa-envelope"></i>
+            <h5>EMAIL</h5>
+            <small>
+              <a href="mailto:juancruzledesma@yahoo.com.ar">juancruzledesma@yahoo.com.ar</a>
+            </small>
+          </aside>
+
+          <!-- REDES SOCIALES -->
+          <aside class="contact-card box-shadow">
+
+            <i class="fas fa-hashtag"></i>
+            <h5>REDES SOCIALES</h5>
+
+            <small class="redes-sociales">
+
+              <!-- GitHub -->
+              <a href="https://github.com/JCLedesmaDev" target="_blank" rel="noopener" class="github">
+                <i class="fab fa-github"></i>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/juan-cruz-ledesma-383b40191/" target="_blank" rel="noopener"
+                class="linkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/juanchii_ledesma/?hl=es-la" target="_blank" rel="noopener"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+            </small>
+
+          </aside>
+
+        </article>
+
+
+        <!-- FORMULARIO -->
+        <form class="contacto-form box-shadow">
+
+          <!-- El id de cada contenedor debe estar compuesto por "form__" seguido del name de su respectivo input o textarea (se utiliza en JS) -->
+          <div class="contenedor-form" id="form__nombre">
+
+            <div class="form-inputs">
+
+              <input type="text" name="nombre" placeholder="Ingrese su nombre"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,40}$" autocomplete="off" required>
+              <i class="form__validacion-estado fas fa-times-circle"></i>
+
+            </div>
+
+            <p class="form-error">
+              El "nombre" tiene que ser de 1 a 40 dígitos y solo puede contener letras y espacios en blanco.
+            </p>
+
+          </div>
+
+          <div class="contenedor-form" id="form__email">
+
+            <div class="form-inputs">
+
+              <input type="email" name="email" placeholder="Ingrese su correo electrónico"
+                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" autocomplete="off" required>
+              <i class="form__validacion-estado fas fa-times-circle"></i>
+
+            </div>
+
+            <p class="form-error">
+              El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+            </p>
+
+          </div>
+
+          <div class="contenedor-form" id="form__comentario">
+
+            <div class="form-textarea">
+
+              <textarea name="comentario" cols="50" rows="10" placeholder="Dejeme su consulta aquí"
+                data-pattern="^.{1,255}$" required></textarea>
+              <i class="form__validacion-estado fas fa-times-circle"></i>
+
+            </div>
+
+            <p class="form-error">
+              Su consulta no debe acceder de los 255 caracteres.
+            </p>
+
+          </div>
+
+          <div class="contacto-form-loader text-center none">
+            <img src="static/Spin-1s-200px.svg" alt="Enviando...">
+          </div>
+
+          <div class="contenedor-form" id="form__boton">
+            <input type="submit" class="btn text-lg-center" value="Enviar mensaje">
+          </div>
+
+        </form>
+
+
+        <!-- MODAL DEL FORMULARIO -->
+        <article id="gracias" class="modal">
+
+          <div class="modal-content">
+
+            <article class="contacto-form-response">
+
+              <h3>¡Muchas gracias por su consulta!</h3>
+
+              <i class="far fa-smile-wink"></i>
+
+            </article>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <small>
+      Sitio diseño por
+      <a href="https://www.linkedin.com/in/juan-cruz-ledesma/" target="_blank" rel="noopener">
+        Juan Cruz Ledesma
+      </a>
+      |
+      <a href="https://github.com/JCLedesmaDev" target="_blank" rel="noopener">
+        @JCLedesmaDev
+      </a>
+    </small>
+  </footer>
+
+  <!-- Cada vez que se suba a github, cambiar el 1.0.0 por el n° sig -->
+  <script src="js/index.js?1.4" type="module"></script>
+</body>
+
+</html>
